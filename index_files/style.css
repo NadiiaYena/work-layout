@@ -132,8 +132,8 @@ Table of content:
   --bg-color-odd: #F4F4F4;
   --bg-light: #F8F9FA;
   --bg-dark-1: #1B1663;
-  --bg-dark-2: #222222;
-  --bg-dark-3: #121212;
+  --bg-dark-2: #292828;
+  --bg-dark-3: #292828;
   --bg-dark-1-rgb: #12121240;
 ;
   --bg-grey: #eeeeee;
@@ -413,20 +413,20 @@ header .logo-mobile {
   background-color: #121212; /* прозорий темний колір */
   z-index: -1; /* під контентом */
 }
-.img-serv::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(
-          to bottom,
-          rgba(18, 18, 18, 1) 0%,    /* затемнення зверху */
-          rgba(18, 18, 18, 0.5) 50%,   /* прозорість після 30% */
-          rgba(18, 18, 18, 0) 100%   /* прозорість внизу */
-  );
-}
+/*.img-serv::after {*/
+/*  content: "";*/
+/*  position: absolute;*/
+/*  top: 0;*/
+/*  left: 0;*/
+/*  width: 100%;*/
+/*  height: 100%;*/
+/*  background: linear-gradient(*/
+/*          to bottom,*/
+/*          rgb(18, 18, 18) 0%,    !* затемнення зверху *!*/
+/*          rgba(18, 18, 18, 0.7) 30%,*/
+/*          rgba(18, 18, 18, 0) 100%   !* прозорість внизу *!*/
+/*  );*/
+/*}*/
 .btn-main-menu {
   background-color: transparent;
   color: #fff;
@@ -448,7 +448,7 @@ header.smaller.scroll-light {
   border-radius: 10px;
 }
 .news-section .text-black {
-  color: #121212 !important;
+  color: #292828 !important;
 }
 
 header.scroll-light .logo-scroll{
@@ -1265,11 +1265,11 @@ header.header-mobile.header-center #logo-center{
 }
 
 .dark-scheme #content {
-  background: var(--bg-dark-1);
+  background: var(--bg-dark-2);
 }
 
 .dark-scheme #content {
-  background: var(--bg-dark-1);
+  background: var(--bg-dark-2);
 }
 
 /* ================================================== */
@@ -1336,7 +1336,7 @@ section.no-bg,
 
 
 .dark-scheme section {
-  background: var(--bg-dark-1);
+  background: var(--bg-dark-2);
 }
 
 .no-bg {
@@ -12450,21 +12450,21 @@ img {
   width: 100%;
   position: relative;
 }
-.img-sep::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(
-          to bottom,
-          rgba(0, 0, 0, 0.8) 0%,     /* затемнення зверху */
-          rgba(0, 0, 0, 0) 20%,      /* прозорість після 20% */
-          rgba(0, 0, 0, 0) 80%,      /* прозорість до 80% */
-          rgba(0, 0, 0, 0.8) 100%    /* затемнення знизу */
-  );
-}
+/*.img-sep::after {*/
+/*  content: "";*/
+/*  position: absolute;*/
+/*  top: 0;*/
+/*  left: 0;*/
+/*  width: 100%;*/
+/*  height: 100%;*/
+/*  background: linear-gradient(*/
+/*          to bottom,*/
+/*          rgba(0, 0, 0, 0.8) 0%,     !* затемнення зверху *!*/
+/*          rgba(0, 0, 0, 0) 20%,      !* прозорість після 20% *!*/
+/*          rgba(0, 0, 0, 0) 80%,      !* прозорість до 80% *!*/
+/*          rgba(0, 0, 0, 0.8) 100%    !* затемнення знизу *!*/
+/*  );*/
+/*}*/
 
 /* ================================================== */
 
