@@ -1695,16 +1695,16 @@
         });
         // cart button & popup end
     
-        $('.accordion-section-title').on("click", function(e) {
-         var currentAttrvalue = $(this).data('tab');
-         if($(e.target).is('.active')){
-             $(this).removeClass('active');
-             $('.accordion-section-content:visible').slideUp(300);
-         } else {
-             $('.accordion-section-title').removeClass('active').filter(this).addClass('active');
-             $('.accordion-section-content').slideUp(300).filter(currentAttrvalue).slideDown(300);
-         }
-        });
+        // $('.accordion-section-title').on("click", function(e) {
+        //  var currentAttrvalue = $(this).data('tab');
+        //  if($(e.target).is('.active')){
+        //      $(this).removeClass('active');
+        //      $('.accordion-section-content:visible').slideUp(300);
+        //  } else {
+        //      $('.accordion-section-title').removeClass('active').filter(this).addClass('active');
+        //      $('.accordion-section-content').slideUp(300).filter(currentAttrvalue).slideDown(300);
+        //  }
+        // });
 
         jQuery.each(jQuery('textarea[data-autoresize]'), function() {
             var offset = this.offsetHeight - this.clientHeight;
