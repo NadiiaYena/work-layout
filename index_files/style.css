@@ -7793,7 +7793,11 @@ footer .tiny-border span {
 .hover-op-1,.hover-op-05{ opacity:0 }
 .hover:hover .hover-op-1{ opacity:1 }
 .hover:hover .hover-op-05{ opacity:.5 }
-.hover:hover .hover-scale-1-1{transform: scale(1.1);}
+.hover-scale-1-1 {
+  filter: grayscale(100%);
+  transition: filter 0.2s ease;
+}
+.hover:hover .hover-scale-1-1{transform: scale(1.1); filter: grayscale(0%);   }
 .hover:hover .hover-scale-1-2{transform: scale(1.2);}
 .hover:hover .hover-scale-in-3{transform: scale(1); opacity: 1}
 .hover:hover .hover-bg-color{background: var(--primary-color) !important;}
