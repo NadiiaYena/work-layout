@@ -13719,3 +13719,14 @@ img {
 .hidden {
   display: none;
 }
+.news-item {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;   /* кількість рядків */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.no-shrink {
+  flex-shrink: 0;   /* не дозволяє блоку стискатися */
+}
+
