@@ -82,10 +82,10 @@ Table of content:
   --heading-font-color: #002060;
   --heading-text-transform: none;
   /* h1 */
-  --h1-font-size: 60px;
+  --h1-font-size: 50px;
   --h1-font-weight: var(--heading-font-weight);
-  --h1-letter-spacing: -0.02em;
-  --h1-line-height: 1.15em;
+  --h1-letter-spacing: -1.44px;
+  --h1-line-height: 110px;
   --h1-margin-bottom: 20px;
   /* h2 */
   --h2-font: var(--heading-font);
@@ -202,6 +202,13 @@ body.dark-scheme {
   background: var(--bg-dark-1);
 }
 
+p {
+  line-height: 150%;
+  font-weight: 400;
+}
+h4 {
+  line-height: 120%;
+}
 a,
 a:hover {
   color:var(--body-font-color);
@@ -219,13 +226,39 @@ a:hover {
 }
 
 #main-section {
-  background-image: url("../img/page/main.png");
+  background-image:
+          /*linear-gradient(rgba(18,18,18,0.6), rgba(18,18,18,0.6)), !* оверлей *!*/
+          url("../img/page/main.png");                                 /* сама картинка */
   width: 100%;
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
 }
-/* ================================================== */
+/*#main-section:after {*/
+/*  content: "";*/
+/*  position: absolute;*/
+/*  top: 0;*/
+/*  left: 0;*/
+/*  width: 100%;*/
+/*  height: 100%;*/
+/*  opacity: 0.5;*/
+/*  background: linear-gradient(180deg, #292828 0%, rgba(41, 40, 40, 0.00) 100%);*/
+
+/*}*/
+/*#main-section:before {*/
+/*  content: "";*/
+/*  position: absolute;*/
+/*  top: 0;*/
+/*  left: 0;*/
+/*  width: 100%;*/
+/*  height: 100%;*/
+/*  opacity: 0.5;*/
+/*  background: linear-gradient(0deg, #222 0%, rgba(34, 34, 34, 0.00) 100%);*/
+
+/*}*/
+
+
+  /* ================================================== */
 
 
 /*  header  */
@@ -413,20 +446,24 @@ header .logo-mobile {
   background-color: #121212; /* прозорий темний колір */
   z-index: -1; /* під контентом */
 }
-/*.img-serv::after {*/
-/*  content: "";*/
-/*  position: absolute;*/
-/*  top: 0;*/
-/*  left: 0;*/
-/*  width: 100%;*/
-/*  height: 100%;*/
-/*  background: linear-gradient(*/
-/*          to bottom,*/
-/*          rgb(18, 18, 18) 0%,    !* затемнення зверху *!*/
-/*          rgba(18, 18, 18, 0.7) 30%,*/
-/*          rgba(18, 18, 18, 0) 100%   !* прозорість внизу *!*/
-/*  );*/
-/*}*/
+.img-serv::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, #292828 20.22%, rgba(41, 40, 40, 0.00) 100%);
+}
+.img-serv::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(18, 18, 18, 0.75);
+}
 .btn-main-menu {
   background-color: transparent;
   color: #fff;
@@ -3925,7 +3962,7 @@ h1{
   font-size: var(--h1-font-size);
   font-weight: var(--h1-font-weight);  
   letter-spacing: var(--h1-letter-spacing);
-  line-height: var(--h1-line-height);
+  /*line-height: var(--h1-line-height);*/
   margin-bottom: var(--h1-margin-bottom);
 }
 
@@ -7793,10 +7830,10 @@ footer .tiny-border span {
 .hover-op-1,.hover-op-05{ opacity:0 }
 .hover:hover .hover-op-1{ opacity:1 }
 .hover:hover .hover-op-05{ opacity:.5 }
-.hover-scale-1-1 {
-  filter: grayscale(100%);
-  transition: filter 0.2s ease;
-}
+/*.hover-scale-1-1 {*/
+/*  filter: grayscale(100%);*/
+/*  transition: filter 0.2s ease;*/
+/*}*/
 .menu-item:hover{
   color: var(--primary-color) ;
 }
