@@ -227,35 +227,60 @@ a:hover {
 
 #main-section {
   background-image:
-          /*linear-gradient(rgba(18,18,18,0.6), rgba(18,18,18,0.6)), !* оверлей *!*/
+          /*linear-gradient(rgba(18,18,18,0.4), rgba(18,18,18,0.4)), !* оверлей *!*/
           url("../img/page/main.png");                                 /* сама картинка */
   width: 100%;
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
 }
-/*#main-section:after {*/
+#main-section:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+  background: linear-gradient(180deg, #121212 0%, rgba(18, 18, 18, 0.00) 50%);
+
+}
+#main-section:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(0deg, #121212 0%, rgba(18, 18, 18, 0.00) 80%);
+
+}
+/*#main-section {*/
+/*  position: relative; !* обов'язково *!*/
+/*  width: 100%;*/
+/*  background-image: url("../img/page/main.png");*/
+/*  background-repeat: no-repeat;*/
+/*  background-position: center;*/
+/*  background-size: contain;*/
+/*  overflow: hidden;*/
+/*}*/
+
+/*#main-section::after {*/
 /*  content: "";*/
 /*  position: absolute;*/
-/*  top: 0;*/
-/*  left: 0;*/
+/*  top: 0; left: 0;*/
 /*  width: 100%;*/
 /*  height: 100%;*/
-/*  opacity: 0.5;*/
-/*  background: linear-gradient(180deg, #292828 0%, rgba(41, 40, 40, 0.00) 100%);*/
+/*  z-index: 1;*/
 
+/*  !* три шари: чорний оверлей + верхній і нижній градієнт *!*/
+/*  background:*/
+/*          linear-gradient(rgba(18,18,18,0.4), rgba(18,18,18,0.4)), !* оверлей opacity: 0.4 *!*/
+/*          linear-gradient(180deg, #121212 0%, rgba(18,18,18,0) 100%), !* градієнт 1 opacity: 0.5 можна контролювати через rgba *!*/
+/*          linear-gradient(0deg, #121212 0%, rgba(18,18,18,0) 100%);   !* градієнт 2 *!*/
 /*}*/
-/*#main-section:before {*/
-/*  content: "";*/
-/*  position: absolute;*/
-/*  top: 0;*/
-/*  left: 0;*/
-/*  width: 100%;*/
-/*  height: 100%;*/
-/*  opacity: 0.5;*/
-/*  background: linear-gradient(0deg, #222 0%, rgba(34, 34, 34, 0.00) 100%);*/
 
-/*}*/
+
 
 
   /* ================================================== */
@@ -453,7 +478,7 @@ header .logo-mobile {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(180deg, #292828 20.22%, rgba(41, 40, 40, 0.00) 100%);
+  background: linear-gradient(180deg, #121212 20.22%, rgba(18, 18, 18, 0.00) 100%);
 }
 .img-serv::before {
   content: "";
